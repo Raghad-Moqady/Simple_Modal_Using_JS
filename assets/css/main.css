@@ -1,0 +1,88 @@
+.products{
+    background-color: rgba(30, 138, 173, 0.26);
+}
+
+.main_title{
+    color: aliceblue;
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+.product_content{
+    background-color: rgba(240, 248, 255, 0.568);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 20rem; 
+    overflow:hidden;
+}
+.product_img{
+    cursor:pointer;
+ }
+
+ /* for modal */
+ .my_modal{
+    background-color: rgba(3, 8, 12, 0.667);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; 
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+    backdrop-filter: blur(7px);
+ }
+
+ .show_modal{
+    opacity: 1;
+    visibility:visible;
+ }
+
+
+ .modal_content{
+    width: 40%;
+    height: 50%;
+    background-color:aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: 20%;
+    margin: auto;
+    user-select: none;
+ }
+ .left_arrow , .right_arrow, .close_icon{ 
+    width:40px ;
+    height: 40px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     position: absolute;
+     cursor: pointer;
+ }
+
+ .close_icon{
+    top: 5px;
+    right: 5px;
+    color: rgba(30, 137, 173, 0.737) ;
+    font-size:x-large;
+     
+     
+ }
+ .left_arrow, .right_arrow{
+     color: aliceblue;
+    background-color: rgba(30, 138, 173, 0.26) ;
+ }
+ .right_arrow{
+    top: 50%;
+    right: 10%;
+ }
+ .left_arrow{
+    top: 50%;
+    left: 10%;
+ }
